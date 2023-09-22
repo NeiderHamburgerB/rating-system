@@ -15,6 +15,7 @@ export const DatabaseProvider = [
             password: config.get('DB_PASSWORD_DEV'),
             entities:[entities],
             synchronize:true,
+            ssl:true
         })
     })
     
