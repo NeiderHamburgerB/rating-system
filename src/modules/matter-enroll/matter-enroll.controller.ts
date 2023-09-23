@@ -77,7 +77,7 @@ export class MatterEnrollController {
 
   @Auth()
   @ApiOperation({
-    summary: 'Patch Endpoint (WITH AUTHENTICATION) passes the id of the matter to be updated',
+    summary: 'Patch Endpoint (WITH AUTHENTICATION) passes the id of the matter enroll to be updated',
     description: 'It is enabled so that the student can finish a course taken and self-add a grade HAHA, it should only be permission from an administrator but since roles were not requested in the requirements.',
   })
   @Patch(':id')
