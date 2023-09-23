@@ -80,7 +80,7 @@ export class MatterEnrollService {
     const [errorMatterEnroll, matterEnroll] = await to(
       entityManager.findOne(MatterEnroll, {
         where: {
-          id: matterEnrollInfo.matter_id,
+          matter_id: matterEnrollInfo.matter_id,
           student_id: matterEnrollInfo.student_id,
         },
         select: ['id']
